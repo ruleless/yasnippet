@@ -1383,8 +1383,8 @@
 #
 #    90cd855c14f92088067425381ea5225d8af8e6f0
 #
-#        Rename all non-external symbols to `yas--`. Maitain list of external
-#        symbols in `yas--exported-syms`
+*** Rename all non-external symbols to `yas--`.
+#         Maitain list of external symbols in `yas--exported-syms`
 #
 #    96638af80eb3cbeaee80046b0a324d94053d27b9
 #
@@ -1408,8 +1408,10 @@
 #
 #    a51adba93da0b56c14ba1ef95f3f13994faeeeb7
 #
-#        Rename all symbols to `yas-*` but alias the old `yas/*` for backward
-#        compatibility Bump version to 0.8 All files use unix file endings
+*** Rename all symbols to `yas-*` but alias the old `yas/*`
+    for backward compatibility
+#         Bump version to 0.8
+#         All files use unix file endings
 #
 #    d7921cfc227bad9b02d109a2375aa8a3acc0a498
 #
@@ -1446,7 +1448,7 @@
 #
 #    3b26af4233832e357650ab47c776d9c1cb6ebbcb
 #
-#        yasnippet now belongs to the FSF
+*** yasnippet now belongs to the FSF
 #
 #    245e267e1d3f8d3a0d749048d7350531632a964c
 #
@@ -1500,11 +1502,13 @@
 #        yas/dont-activate can now be a list of functions
 #    6b841dd2471d8a99019415f4ac526445c2133c3d
 #
-#        allow yas/dont-activate to take list of functions with default being
-#        `(minibufferp)`
-#        - This allows the user to configure whether yasnippet should be
-#        enabled in
-#         minibuffer while preserving the current default.
+*** allow yas/dont-activate to take list of functions
+    :PROPERTIES:
+    :feature:  t
+    :END:
+    with default being `(minibufferp)`
+    - This allows the user to configure whether yasnippet should be
+      enabled in minibuffer while preserving the current default.
 #
 #    5ed6adadcec13565700dc431fb2a5ba6f0a70df4
 #
@@ -1621,7 +1625,10 @@
 #
 #    6d416253ac949accad0b468600cb2aaf073afb3b
 #
-#        Merge branch 'jit-loading', implementing #160.
+*** Merge branch 'jit-loading', implementing #160.
+    :PROPERTIES:
+    :feature:  t
+    :END:
 #
 #    fcb4dfe43d05a64a172f8a5bf7bb1717b4b250cc (upstream/jit-loading)
 #
@@ -1671,7 +1678,10 @@
 #
 #    e30b67f9ca2879565260c1c82ee231e6cd16ff6f
 #
-#        enhancement: add `yas/recompile-all`
+*** enhancement: add `yas/recompile-all`
+    :PROPERTIES:
+    :feature:  t
+    :END:
 #
 #    a948b92aa2ac217d0025e344eba30a5fd063f864
 #
@@ -1721,8 +1731,11 @@
 #
 #    63235678091f6c420deade918c6b18df03a73f87
 #
-#        Introduced 'yas/message and 'yas/verbosity, make everything log to
-#        level 3 for now. Implements #224.
+*** Introduced 'yas/message and 'yas/verbosity,
+    :PROPERTIES:
+    :feature:  t
+    :END:
+    make everything log to level 3 for now. Implements #224.
 #
 #    012ce9cba0014ad1909c1b4409e525d80400c884
 #
@@ -1911,8 +1924,10 @@
 #
 #    11fb69f0c027f6670a02ef259abd1576addf4bfe
 #
-#        `yas/exit-snippet` called interactively exits the most recently
-#        inserted snippet (issue #196)
+*** `yas/exit-snippet` called interactively exits the most recently inserted snippet (issue #196)
+    :PROPERTIES:
+    :bugfix:   t
+    :END:
 #
 #    e53c41d7260ae578302d209a106d90286b1ad696
 #
@@ -1981,11 +1996,11 @@
 #
 #    3aea27042bc2a0f05b2755e0c5c4edc43b426aed
 #
-#        removed group-name prefix on trigger keys
+*** removed group-name prefix on trigger keys
 #
 #    7b383f8c224dd477d250d5b785c16aadf61150fe
 #
-#        removed mode-name prefix on trigger keys
+*** removed mode-name prefix on trigger keys
 #
 #    cc1a0922ee99a2f703d84cced424b1ed36d82943
 #
@@ -1998,7 +2013,10 @@
 #
 #    238e46a020fc064b6f9a897c841b8bae1009026e
 #
-#        Remove support for filenames-as-triggers
+*** Remove support for filenames-as-triggers
+    :PROPERTIES:
+    :feature:  -
+    :END:
 #
 #    f48317e7c5ecdbb7680d0ea2c595cfda0342c3bb
 #
@@ -2120,8 +2138,8 @@
 #
 #    35eaad9d4022dad32f4503fa4b2f9e948ad43a49
 #
-#        * Remove a spurious test defun and incorporting a suggestion for
-#        `yas/skip-and-clear-key' by Matthew Fidler
+#        * Remove a spurious test defun and
+*** incorporting a suggestion for `yas/skip-and-clear-key' by Matthew Fidler
 #
 #    81065f485887181586e76c3409429270777e7a6b
 #
@@ -2225,10 +2243,9 @@
 #
 #    503e105b3eed4c4677b999de8612351676612568
 #
-#        * new default: (setq yas/show-menu-p 'abbreviate) *
-#        `yas/visit-snippet' now ignores yas/prompt-functions * default
-#        `yas/buffer-local-condition' only restrictive for trigger key
-#        expansions
+*** new default: (setq yas/show-menu-p 'abbreviate)
+*** `yas/visit-snippet' now ignores yas/prompt-functions
+*** default `yas/buffer-local-condition' only restrictive for trigger key expansions
 #
 #    2ccd85a7262b71a3567e4910cdd7216dc1ecc6d2
 #
@@ -2249,9 +2266,9 @@
 #
 #    54c4b7db00db7cc6d911d2e45013cbb66431cf5c
 #
-#        * Fix issue with escaping "(", thanks Sebastian * Add
-#        `yas/expand-only-for-last-commands', thanks Erik Postma. * Fix an
-#        issue with primary field transformation after revision 600.
+#        * Fix issue with escaping "(", thanks Sebastian
+*** Add `yas/expand-only-for-last-commands', thanks Erik Postma.
+#        * Fix an issue with primary field transformation after revision 600.
 #
 #    71af878b7079180aab9a691af673dad426f2a418
 #
@@ -2292,8 +2309,8 @@
 #
 #    dc47c9862579d9dd3f94e2b0945fe8f0a9508a1f
 #
-#        * Rewrite `yas/load-snippet-buffer' yet again, is better. * Alias
-#        `yas/mode-symbol' new variable yas/extra-modes and consolidate. *
+#        * Rewrite `yas/load-snippet-buffer' yet again, is better.
+*** Alias `yas/mode-symbol' new variable yas/extra-modes and consolidate.
 #        ${0: ...} fields try to set the mark on exit, doesn't always work...
 #
 #    5b25e4205dee7a101845fb749962458c2d74d11c
@@ -2369,7 +2386,7 @@
 #
 #    5be8629b7e497cdd7c65885e2202137a4d0c9043
 #
-#        * Add the `yas/unimplemented' helper and minor tweaks.
+*** Add the `yas/unimplemented' helper and minor tweaks.
 #
 #    2498c5e44a7a08917ae2bb1a4c7546ed89a08e52
 #
@@ -2456,7 +2473,7 @@
 #
 #    3c90c1b27913ed72b7fb536c065559a4ee083e27
 #
-#        * Added `yas/get-template-by-uid'
+*** Added `yas/get-template-by-uid'
 #
 #    f55c2dfc464c94c3a202cc4ef5e582e6f6239a3d
 #
@@ -2497,6 +2514,10 @@
 #    affd244f045a2e6d8fef3f55e35713be1ab994a9
 #
 #        * Help display for snippet keybindings much cleaner. * New very
+*** new function yas/list-tables
+    :PROPERTIES:
+    :feature:  t
+    :END:
 #        helpful `yas/list-tables'. * Debug functions now go to their own
 #        file. * More slight adjustments to snippet loading code. *
 #        Hyperlinks to snippets definition files! * `yas/key-syntaxes'
@@ -2629,7 +2650,10 @@
 #
 #    3108399930232fb07f341a03eb76a980d07f863d
 #
-#        * Added the condition-cache feature.
+*** Added the condition-cache feature.
+    :PROPERTIES:
+    :feature:  t
+    :END:
 #
 #    f7bf0f4f384bf4cd86f5f6119d17c335789fc133
 #
@@ -2667,8 +2691,7 @@
 #
 #    2e16b2a7320df7f190b7f26e80f810f683b97a94
 #
-#        * mirrors-inside-fields works! hope I didn't break a million other  
-#        things...
+*** mirrors-inside-fields works!
 #
 #    9d3d2e102cb26fa76fadc9597bd5ef2bd0f4fb9a
 #
@@ -2761,16 +2784,21 @@
 #
 #    088ba32300cdda96bde07a4d5efc3fffb8ec88a9
 #
-#        * Commands are now identified by a new "# type: command" directive.
+*** Commands are now identified by a new "# type: command" directive.
+    :PROPERTIES:
+    :feature:  t
+    :END:
 #
 #    0b55a52b8dc5b44b1db07876b38c032b92be7d4d
 #
-#        * First implementation of snippet-commands, looks promising.
+*** First implementation of snippet-commands, looks promising.
+    :PROPERTIES:
+    :feature:  t
+    :END:
 #        * Optimization: read lisp expressions only once, eval many times.
 #
-#        * auto-load .yas-setup.el instead of setup.el to prevent loading it
-#        as
-#         a snippet
+*** auto-load .yas-setup.el instead of setup.el
+    to prevent loading it as a snippet
 #
 #
 #    57c150b42dcad94764dc7863dc4d45311f3acb3e
@@ -2818,8 +2846,7 @@
 #        * Still to decide when to call (or if to call)
 #         `yas/snippet-keybindings-reload'.
 #
-#        * Split `yas/store' into yas/remove-snippet and
-#         yas/add-snippet. Better, but still needs more work.
+*** Split `yas/store' into yas/remove-snippet and yas/add-snippet.
 #
 #        * Commented and beautified some existings comments.
 #
@@ -2988,7 +3015,10 @@
 #
 #    9541218756519eab78b3db5ed2fc34182016db8a
 #
-#        * Bring back `yas/dont-activate'
+*** Bring back `yas/dont-activate'
+    :PROPERTIES:
+    :feature:  t
+    :END:
 #        * Fix issue 74. (Thanks to martin.k...@gmail.com)
 #
 #
@@ -2997,8 +3027,10 @@
 #        * Snippet table store is now based on two hash tables (keyhash and  
 #        namehash) instead of a hash table and an alist (this is still not
 #        ideal).
-#        * `yas/wrap-around-region' can now also be 'cua' (undocumented
-#        feature)
+*** `yas/wrap-around-region' can now also be 'cua' (undocumented feature)
+    :PROPERTIES:
+    :feature:  t
+    :END:
 #
 #        * More cleanup
 #
@@ -3038,9 +3070,10 @@
 #
 #        * Fixed a serious nconc (circular-list) bug that lead to infinite
 #        loops
-#        * Implemented a .yas-make-groups hidden file (already had
-#         .yas-parents) to make groups from directory hierarchy. (as opposed
-#         to making parents)
+*** .yas-make-groups to make groups from directory hierarchy.
+    :PROPERTIES:
+    :feature:  t
+    :END:
 #
 #        * yas/ignore-filenames-as-triggers can be used to, well, do what it
 #        says
@@ -3050,12 +3083,15 @@
 #
 #    d153d840104f6c4716d16a8ce2dc630b75a2aac3
 #
-#        * Implement per-snippet keybinding using "keybinding: " keyword *
+*** Implement per-snippet keybinding using "keybinding: " keyword
+    :PROPERTIES:
+    :feature:  t
+    :END:
 #        Fix random bugs * Fix some whitespace * `yas/use-menu' can now be
 #        'real-modes' or 'abbreviate'
-#        * Changed prototype of `yas/expand-snippet' to be more user-friendly
-#         (this breaks backward compatibility)
-#        * Renamed keyword "env" to "expand-env"
+*** Changed prototype of `yas/expand-snippet' to be more user-friendly
+    (this breaks backward compatibility)
+*** Renamed keyword "env" to "expand-env"
 #
 #        * TODO: fix more bugs, write more documentation
 #
@@ -3083,8 +3119,10 @@
 #
 #        * Redesigned directory-guessing mechanism, but kept backward  
 #        compatibility
-#        * A mode can now have multiple parent modes using a hidden
-#         ".yas-parents" file.
+*** A mode can now have multiple parent modes using a hidden ".yas-parents" file.
+    :PROPERTIES:
+    :feature:  t
+    :END:
 #
 #        * Fixed issue 70.
 #
