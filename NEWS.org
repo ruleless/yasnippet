@@ -1,3 +1,5 @@
+* Changes
+** Changes for 0.9.0
 #    6053db05caca4a5255fd4329b23b00dd5f6ecbd3 (upstream/master, master)
 #
 #        Closes #527: Unbreak case where yas-fallback-behaviour is a list
@@ -1356,6 +1358,7 @@
 #        doc/snippet-menu.rst
 #        doc/snippet-organization.rst
 #
+** Changes for 0.8.0
 #    c2ce16a510bb1e533a6df19190c16982344d5303 (tag: 0.8.0-elpa-start)
 #
 #        Create tar.gz packages
