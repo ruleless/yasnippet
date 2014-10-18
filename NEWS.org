@@ -26,21 +26,46 @@
 **** New functions =yas-activate-extra-mode= and =yas-deactivate-extra-mode=
      These are preferable to setting =yas-extra-modes= directly in the
      mode hook. See issue #420 for more information.
+**** New snippet-mode command =yas-load-snippet-buffer-and-close=
+     Bound to =C-c C-c= by default. =yas-load-snippet-buffer='s
+     binding is now =C-c C-l= and it no longer closes the snippet
+     window. See issues #417, #432.
 **** New variable =yas-new-snippet-default=
      The default snippet suggested on =yas-new-snippet= can now be
      customized.
+**** No longer bundle dropdown-list.el.
+     See issues #356, #370.
+**** yasnippet key bindings are now controlled via =yas-minor-mode-map=
+     instead of =yas-trigger-key= which is removed. See issue #296.
+**** New Function =yas-active-keys= returns currently active snippet keys.
+     See issues #277, #315.
 
 *** Fixed bugs
-    
-    TODO: harvest most "Fix XXX" references from the comments and add
-    each as a single heading. A googlecode tracker bug should be "Fix
-    Googlecode 123" whereas a github tracker bug should be "Fix Github
-    #123". If a summarized description can be done in a few words, add
-    it, otherwise don't care.
-
 **** Github #527, #525 and #526: Attempt to prevent "fallback loops"
      When interactiing with other extensions that use similar fallback
      mechanisms.
+**** Fix Github #508: preserve original point when evaluating conditions
+**** Fix Github #470: allow non-word keys for modes with line comments
+**** Fix Github #492,494: follow alias chains when calculating parent modes
+**** Fix Github #403: honor =yas-use-menu=
+**** Fix Github #496: allow user to set =yas-minor-mode-map=
+**** Fix Github #453/466: yas-no-prompt should take the first choice
+**** Fix Github #447: don't try to fallback to non-existant command
+**** Fix Github #415: no longer disable c-electric-mode in snippet fields
+**** Fix Github #409: fix font-lock errors
+**** Fix Github #404,474: avoid throwing errors from cc-mode's fontification
+**** Fix Github #391: compatibility with Emacs 22
+**** Fix Github #318: check for circular parenthood in snippet dirs
+**** Fix Github #351: handle nested mirrors correctly
+**** Fix Github #347: compatibility with auto-complete-mode
+**** Fix Github #330/333,339: work with Emacs Lisp changes in 24.3
+**** Fix Github #271: preserve backslashes in yas-selected-text
+**** Fix Github #235: ??
+**** Fix Github #253,495: jit loading of snippets
+     for buffers existing on yasnippet startup
+**** Fix Github #281: jit-load order must follow yas-snippet-dirs
+**** Some other litte bugs
+#308, #290, #323, #328, #344, #355, #358, #312, #406, #440, #446, #464
 
 ** Changes for 0.8.0
 *** New features
